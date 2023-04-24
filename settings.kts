@@ -68,9 +68,3 @@ object Build : BuildType({
         }
     }
 })
-
-object MyVcsRoor: GitVcsRoot({
-    name = DslContext.getParameter("vcsName")
-    url = DslContext.getParameter("vcsUrl")
-    branch = DslContext.getParameter("vcsBranch", "refs/heads/main")
-})
