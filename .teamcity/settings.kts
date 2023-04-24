@@ -33,6 +33,7 @@ object Build : BuildType({
             goals = "install es"
             dockerImage = "elasticsearch:latest"
         }
+        
     }
 
     triggers {
