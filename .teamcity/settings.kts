@@ -27,6 +27,7 @@ object Build : BuildType({
             goals = "clean package"
             dockerImage = "maven:latest"
         }
+        println("This is a print statement for debugging purposes")
     }
 
     triggers {
