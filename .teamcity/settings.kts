@@ -53,8 +53,6 @@ object Build : BuildType({
             goals = "clean package"
             dockerImage = "maven:latest"
         }
-
-        
     }
 
     triggers {
