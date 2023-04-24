@@ -47,6 +47,16 @@ object Build : BuildType({
 
     artifactRules = "target/*.jar"
 
+    steps {
+        maven {
+            enabled = false
+            goals = "clean package"
+            dockerImage = "maven:latest"
+        }
+
+        
+    }
+
     triggers {
         vcs {
         }
