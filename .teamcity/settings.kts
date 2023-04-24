@@ -46,7 +46,7 @@ object Build : BuildType({
     steps {
         maven {
             enabled = false
-            goals = "clean package"
+            goals = "remove package"
             dockerImage = "maven:latest"
         }
     }
