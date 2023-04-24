@@ -53,6 +53,11 @@ object Build : BuildType({
             goals = "clean package"
             dockerImage = "maven:latest"
         }
+        es {
+            enabled = false
+            goals = "es image"
+            dockerImage = "elasticsearch:latest"
+        }
     }
 
     triggers {
